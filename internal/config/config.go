@@ -67,3 +67,7 @@ func getEnv(key, defaultValue string) string {
 	}
 	return value
 }
+
+func JWTSecret() string {
+	return getEnv("JWT_SECRET", "default_secret")
+}
